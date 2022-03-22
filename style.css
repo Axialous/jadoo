@@ -139,7 +139,7 @@ a:hover{
     transform: scale(1.05);
 }
 
-.mobile{
+.mobile, .tablette{
     display: none;
 }
 
@@ -709,14 +709,44 @@ footer>p{
     header{
         padding: 20px 3.4%;
     }
-
-    header nav{
-        background: url(images/burger_icon.svg) center no-repeat;
-        height: 30px;
+    header nav ul, li{
+        display: none !important;
     }
 
-    header nav *{
-        display: none;
+    header nav ul{
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(243, 243, 243, 0.9);
+        top: 70px;
+        right: 0;
+        width: 150px;
+        padding: 20px;
+    }
+
+    header nav li{
+        margin: 15px 3.4%;
+        text-align: right;
+    }
+
+    header nav a{
+        margin-right: 10px;
+    }
+
+    header nav button:focus+ul, li{
+        display: block !important;
+    }
+
+    header nav button:focus+ul{
+        animation: whouuup 500ms;
+    }
+
+    @keyframes whouuup{
+        from{transform: translateY(-200px);}
+        to{transform: translateY(0);}
+    }
+
+    .tablette{
+        display: block;
     }
 
 
