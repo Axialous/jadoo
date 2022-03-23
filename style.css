@@ -709,10 +709,14 @@ footer>p{
         display: none !important;
     }
 
+    header nav button{
+        background-color: rgb(255, 255, 255);
+    }
+
     header nav ul{
         flex-direction: column;
         position: absolute;
-        background-color: rgba(243, 243, 243, 0.9);
+        background-color: rgba(255, 255, 255, 0.90);
         top: 70px;
         right: 0;
         width: 150px;
@@ -1000,6 +1004,10 @@ footer>p{
 
 
         /* SECTION CINQ */
+
+    #section_5 article{
+        box-shadow: none;
+    }
 
     #section_5 form{
         text-align: center;
