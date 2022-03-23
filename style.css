@@ -297,20 +297,16 @@ header li{
 }
 
 #plats figure{
-    box-shadow: 0 0 50px rgb(240, 240, 240);
+    box-shadow: 0 0 50px rgba(127, 127, 127, 13%);
+    background-color: rgb(255, 255, 255);
 
+    width: 280px;
+    height: 408px;
     margin: 25px 20px;
 }
 
 #makis{
     padding: 0 7.6px 40px;
-}
-
-#plats figure{
-    background-color: rgb(255, 255, 255);
-    width: 280px;
-    height: 408px;
-
 }
 
 #makis figure{
@@ -322,7 +318,7 @@ header li{
 }
 
 #makis figure:hover{
-    box-shadow: 0 0 50px rgb(240, 240, 240);
+    box-shadow: 0 0 50px rgba(127, 127, 127, 13%);
     background-color: rgb(255, 255, 255);
 
     transition-delay: 0;
@@ -496,7 +492,7 @@ header li{
 
 #section_5 article{
     border-radius: 30px;
-    box-shadow: 0 0 50px rgb(240, 240, 240);
+    box-shadow: 0 0 50px rgba(127, 127, 127, 13%);
 
     width: 1020px;
     height: 558px;
