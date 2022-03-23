@@ -313,13 +313,11 @@ header li{
     width: 267px;
     height: 334px;
     margin: 25px 0;
-    transition-delay: 150ms;
-    transition-duration: 350ms;
+    transition-duration: 1000ms;
 }
 
 #makis figure:hover{
     box-shadow: 0 0 50px rgba(127, 127, 127, 13%);
-    background-color: rgb(255, 255, 255);
 
     transition-delay: 0;
     transition-property: box-shadow;
@@ -360,17 +358,29 @@ header li{
 }
 
 .decoration_rose{
-
     position: relative;
-    bottom: 65px;
+    bottom: 165px;
     right: 118px;
+    z-index: -2;
 
     transform: rotate(-45deg);
     opacity: 0;
 
+    transition-duration: 500ms;
+}
+
+.cache{
+    position: relative;
+    left: 0;
+    bottom: 100px;
     z-index: -1;
 
-    transition-duration: 500ms;
+    width: 100px;
+    height: 100px;
+
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 25px;
 }
 
 #makis figure:hover .decoration_rose{
