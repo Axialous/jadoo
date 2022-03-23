@@ -324,10 +324,6 @@ header li{
     transition-duration: 1000ms;
 }
 
-#makis figure p{
-    height: 56px;
-}
-
 #section_2 img{
     border-radius: 25px 25px 0 0;
 }
@@ -345,8 +341,10 @@ header li{
 
 #makis p{
     font-size: 16px;
-
-    margin-bottom: 36px;
+    
+    height: 56px;
+    
+    margin: 21px 35px 36px;
 }
 
 #decoration_filet{
