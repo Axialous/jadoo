@@ -65,6 +65,10 @@ body{
     overflow-x: hidden;
 }
 
+body>*{
+    transition: 250ms;
+}
+
 .ligne{
     display: flex;
     flex-wrap: wrap;
@@ -242,7 +246,6 @@ header img{
 
 header nav{
     margin: auto 0;
-    padding: 0 42px;
 }
 
 header li{
@@ -467,6 +470,7 @@ header li{
 }
 
 #section_4 a,figure{
+    flex-wrap: nowrap !important;
     margin: 41px 10px;
 }
 
@@ -608,8 +612,17 @@ footer{
     padding: 50px 7.4% 11px;
 }
 
+footer>div>div, nav{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 footer>div>div>div>img{
     margin: 0 16px 19px 0;
+}
+
+footer>div>div>div>img:nth-child(2){
+    margin-right: 0;
 }
 
 footer>div>nav>ul>li+li{
@@ -802,6 +815,14 @@ footer>p{
     footer{
         padding: 50px 3.4% 11px;
     }
+
+    footer>div>div>*{
+        text-align: center;
+    }
+
+    footer>div>div{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -902,24 +923,26 @@ footer>p{
     
     #makis{
         flex-direction: column;
-        align-items: center;
+
+        max-width: 460px;
         padding: 7px 0 5px;
+        margin: 17px auto 50px !important;
     }
 
-    #makis figure:hover{
-        box-shadow: none;
-    }
-
-    .decoration_rose{
+    .decoration_rose, .cache{
         display: none;
     }
 
     #makis figure{
         display: flex;
 
-        width: 417px;
+        width: auto;
         height: auto;
         margin: 10px;
+    }
+
+    #makis figure:hover{
+        box-shadow: none;
     }
 
     #makis img{
@@ -942,8 +965,10 @@ footer>p{
     }
 
     #makis p{
+        max-width: 290px;
+
         margin: 5px 20px;
-        white-space: nowrap;
+
     }
 
     #section_2 .bouton_jaune{
@@ -1013,6 +1038,11 @@ footer>p{
 
         /* SECTION CINQ */
 
+    #section_5{
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+
     #section_5 article{
         box-shadow: none;
     }
@@ -1051,8 +1081,16 @@ footer>p{
         display: block;
     }
 
+    #section_5 #envoi{
+        margin-bottom: 10px;
+    }
+
 
         /* PIED DE PAGE */
+
+    footer{
+        padding-top: 10px;
+    }
 
     footer p{
         display: block;
