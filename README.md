@@ -1,1 +1,2 @@
-Reproduction d'une maquette Figma en HTML et CSS dans le cadre de l'initiation  à ces deux langages.
+Reproduction d'une maquette Figma en HTML et CSS ;
+-> initiation  au développement Web.
